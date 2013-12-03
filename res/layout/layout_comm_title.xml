@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_Ab_Title"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_bar_high"
+    android:background="@drawable/title_bar_blue" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Ab_Left_Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar_high"
+        android:background="@drawable/ab_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <ImageView
+            android:id="@+id/ImageView_Ab_Left_Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ab_left_indicator_dark"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/TextView_Ab_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="我的易投"
+            android:textColor="#FFFFFF"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

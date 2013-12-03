@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="62dp"
+    android:layout_height="64dp"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="8dp" >
+
+<ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:id="@+id/d_item2_logo"
+                    android:src="@drawable/boc" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/d_item2_name"
+                    android:gravity="center"
+                    android:text="工商银行"
+                    android:textColor="@color/app_grey2"
+                    android:textSize="10sp" />
+
+</LinearLayout>

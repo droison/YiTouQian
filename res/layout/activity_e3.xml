@@ -1,0 +1,257 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".E3Activity" >
+
+    <include
+        android:id="@+id/e3_title"
+        layout="@layout/layout_comm_title_only" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" 
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/e3_text1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="1.易投信用卡管家为什么是安全的？"
+                android:textColor="@color/black"
+                android:textSize="16sp" 
+                />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+
+            <TextView
+                android:id="@+id/e3_text1_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="      易投信用卡管家采用银行标准的256位加密技术、多重防火墙、加密数据分层储存等多项技术，保障您的信息安全。易投承诺，您向我们授权的任何信息，均不会用户信用卡账、储蓄卡账单分析以外的用途。"
+                android:textSize="16sp" 
+                android:textColor="@color/app_grey2"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+
+            <TextView
+                android:id="@+id/e3_text2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="2.如何使用易投信用卡管家？"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+
+            <TextView
+                android:id="@+id/e3_text2_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="      通过绑定账单和分析信用卡储蓄卡流水短信，我们立刻告诉您的收支情况，并提醒还款等信息。当您收支清晰、积累财富时，易投还会在您的持卡行中选择您能买到的、收益最好、几乎无风险的银行理财产品，货币基金（即将上线），让您实实在在赚到钱！"
+                android:textSize="16dp" 
+                android:visibility="gone"
+                android:textColor="@color/app_grey2"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+
+            <TextView
+                android:id="@+id/e3_text3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="3.如何凭我的账号密码访问易投理财，获得免费增值服务？"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+
+            <TextView
+                android:id="@+id/e3_text3_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="      每位下载并使用易投信用卡管家的客户，都会获得一个易投账号，用此账号可直接登录易投理财（www.yeetou.com），免费享受会员服务。您的账号密码，可以在设置-我的账户中找到。"
+                android:textSize="16dp" 
+                android:visibility="gone"
+                android:textColor="@color/app_grey2"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+
+            <TextView
+                android:id="@+id/e3_text4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="4.我绑定了邮箱，但是读不出邮件，怎么办？"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+
+            <LinearLayout 
+                android:id="@+id/e3_text4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="      这种情况，通常是您的邮箱设置问题。请按如下方法调整您的邮箱设置，以便我们读取您的账单邮件"
+                android:textSize="16dp"
+                android:textColor="@color/app_grey2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="1. 针对 126/163/yeah 邮箱:"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="    登录您的邮箱→在网页地址栏下方找到设置按钮，并点击进入→POP3/SMTP/IMAP选项→勾选开启POP3服务→点击确定"
+                android:textSize="16dp"
+                android:textColor="@color/app_grey2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="2. 针对 qq/foxmail 邮箱:"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="    登录您的邮箱→在网页地址栏下方找到设置按钮，并点击进入→账户选项→POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务→勾选POP3/SMTP服务→保存更改"
+                android:textSize="16dp" 
+                android:textColor="@color/app_grey2"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="3. 针对 sina 邮箱:"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="    登录您的邮箱→在网页地址栏下方找到设置按钮，并点击进入→账户选项→POP3/SMTP服务→开启→保存"
+                android:textSize="16dp" 
+                android:textColor="@color/app_grey2"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="4. 针对 outlook:"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="     登录您的邮箱→在网页右上角找到设置按钮，并点击进入→更多邮件设置选项→使用 POP 连接设备和应用→启用→保存"
+                android:textSize="16dp"
+                android:textColor="@color/app_grey2" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

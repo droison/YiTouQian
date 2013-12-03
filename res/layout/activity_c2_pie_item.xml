@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".CActivity" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="28dp" >
+
+        <ImageView
+            android:id="@+id/c2_color"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/c2_pie_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/c2_color"
+            android:text="超市"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/c2_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="￥2000"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/c2_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="50%"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>

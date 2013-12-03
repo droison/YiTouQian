@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_grey2" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_high"
+        android:background="@drawable/title_bar_blue"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Ab_Left_Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar_high"
+            android:background="@drawable/ab_item_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ab_left_indicator_dark"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text="理财分析"
+                android:textColor="#ffffff"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/d_head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/white"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/d_text1"
+            android:layout_width="103dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="您有该银行卡\n的理财产品"
+            android:textColor="@color/app_grey1"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/d_divide_line"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/d_text1"
+            android:src="@color/app_bg_grey2" />
+
+        <Button
+            android:id="@+id/d_button"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/d_buttom"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/d_button"
+            android:layout_toRightOf="@id/d_divide_line"
+            android:scrollbars="none" >
+
+            <com.yeetou.xinyongkaguanjia.component.ListLinearLayout
+                android:id="@+id/d_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/d_root_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="更多专家建议，请登录易投网页查看\n记住我们的网站：www.yeetou.com"
+        android:textColor="@color/app_grey1"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/d_root_text"
+        android:layout_below="@id/d_head_layout"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/app_bg_grey2"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/d_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/app_bg_grey2"
+            android:cacheColorHint="@color/app_bg_grey2"
+            android:divider="#ffffff" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

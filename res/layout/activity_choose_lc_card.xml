@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_comm_title_only" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical|left"
+                android:text="持卡银行"
+                android:textColor="@color/app_grey2"
+                android:textSize="16sp" />
+            <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="@color/app_bg_grey2"/>
+            <com.yeetou.xinyongkaguanjia.component.ListLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/choose_card_layout1"
+                android:orientation="vertical"/>           
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical|left"
+                android:text="常用银行"
+                android:textColor="@color/app_grey2"
+                android:textSize="16sp" />
+            <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="@color/app_bg_grey2"/>
+            <com.yeetou.xinyongkaguanjia.component.ListLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/choose_card_layout2"
+                android:orientation="vertical"/>           
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical|left"
+                android:text="其它银行"
+                android:textColor="@color/app_grey2"
+                android:textSize="16sp" />
+            <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="@color/app_bg_grey2"/>
+            <com.yeetou.xinyongkaguanjia.component.ListLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/choose_card_layout3"
+                android:orientation="vertical"         
+            />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

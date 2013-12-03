@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#f2f2f2</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="low_gray2">#dddddd</color>
+    <color name="low_gray">#eeeeee</color>
+    <color name="title_blue">#68a6cf</color>
+    <color name="cart_red">#f4472b</color>
+    <color name="cart_green">#7dc530</color>
+    <color name="cart_blue">#3c94ff</color>
+    <color name="cart_gray">#b5ada6</color>
+    <color name="cart_gren_dark">#33c49d</color>
+    <color name="cart_yellow">#FFFF00</color>
+    <color name="cart_orange">#FF6600</color>
+    <color name="app_bg_grey1">#f2f2f2</color>
+    <color name="app_bg_grey2">#e6e6e6</color>
+    <color name="app_blue">#177FFC</color>
+    <color name="app_green">#489E37</color>
+    <color name="app_red">#8D0115</color>
+    <color name="app_grey1">#434343</color>
+    <color name="app_grey2">#85807C</color>
+    <color name="app_grey3">#B3AFAB</color>
+    
+    <color name="fund_name_color">#177FFC</color>
+    <color name="fund_code_color">#489E37</color>
+    <color name="income_amount_color">#8D0115</color>
+    <color name="line_color">#434343</color>
+    <color name="amount_first_progress_color">#85807C</color>
+    <color name="tab_unselected_color">#B3AFAB</color>
+
+    <color name="cart_1">#3c94ff</color>
+    <color name="cart_2">#153ab6</color>
+    <color name="cart_3">#ff981e</color>
+    <color name="cart_4">#f4472b</color>
+    <color name="cart_5">#7dc530</color>
+    <color name="cart_6">#31901e</color>
+    <color name="cart_7">#33c49d</color>
+</resources>

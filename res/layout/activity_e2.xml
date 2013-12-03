@@ -1,0 +1,453 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".E2Activity" >
+
+    <include
+        android:id="@+id/e1_title"
+        layout="@layout/layout_comm_title_only" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/e2_p1" />
+
+                <TextView
+                    android:id="@+id/e2_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageview1"
+                    android:text="理财工具箱"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="#ddd" />
+
+            <!-- 1 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/e2_p2" />
+
+                <TextView
+                    android:id="@+id/e2_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageview1"
+                    android:text="理财超市"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/e2_name1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageview1"
+                    android:text="一键查看所有理财产品"
+                    android:textColor="@color/app_grey1" />
+
+                <Button
+                    android:id="@+id/e2_bt1"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/e2_download"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+
+            <!-- 2 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/e2_p3" />
+
+                <TextView
+                    android:id="@+id/e2_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageview2"
+                    android:text="基金助理"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/e2_name2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageview2"
+                    android:text="您必不可少的基金投资工具"
+                    android:textColor="@color/app_grey1" />
+
+                <Button
+                    android:id="@+id/e2_bt2"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/e2_download"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+
+            <!-- 3 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/e2_p4" />
+
+                <TextView
+                    android:id="@+id/e2_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageview3"
+                    android:text="房贷计算器"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/e2_name3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageview3"
+                    android:text="方便计算各类购房贷款"
+                    android:textColor="@color/app_grey1" />
+
+                <Button
+                    android:id="@+id/e2_bt3"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/e2_download"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+
+            <!-- 4 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview4"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/e2_p5" />
+
+                <TextView
+                    android:id="@+id/e2_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageview4"
+                    android:text="银行网点查询"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/e2_name4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageview4"
+                    android:text="查找附近银行网点信息"
+                    android:textColor="@color/app_grey1" />
+
+                <Button
+                    android:id="@+id/e2_bt4"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/e2_download"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+
+            <!-- 5 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview5"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/e2_p6" />
+
+                <TextView
+                    android:id="@+id/e2_name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageview5"
+                    android:text="全球货币汇率2.0"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/e2_name5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageview5"
+                    android:text="最新最全的全球货币汇率信息"
+                    android:textColor="@color/app_grey1" />
+
+                <Button
+                    android:id="@+id/e2_bt5"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/e2_download"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+            <!-- 6 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview6"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/e2_p7" />
+
+                <TextView
+                    android:id="@+id/e2_name6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageview6"
+                    android:text="汇率换算计算器"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/e2_name6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageview6"
+                    android:text="一键轻松转换九国货币价值"
+                    android:textColor="@color/app_grey1" />
+
+                <Button
+                    android:id="@+id/e2_bt6"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/e2_download"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+            <!-- 7 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview7"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/e2_p8" />
+
+                <TextView
+                    android:id="@+id/e2_name7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageview7"
+                    android:text="首饰金价"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/e2_name7"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageview7"
+                    android:text="今天周大挂牌金价"
+                    android:textColor="@color/app_grey1" />
+
+                <Button
+                    android:id="@+id/e2_bt7"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/e2_download"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ddd" />
+            <!-- 8 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview8"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/e2_p9" />
+
+                <TextView
+                    android:id="@+id/e2_name8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageview8"
+                    android:text="黄金价格比价"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/e2_name8"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageview8"
+                    android:text="哪家黄金最便宜，比比就知道"
+                    android:textColor="@color/app_grey1" />
+
+                <Button
+                    android:id="@+id/e2_bt8"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/e2_download"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

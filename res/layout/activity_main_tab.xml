@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <include layout="@layout/top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:background="@drawable/main_bar_bg"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_button0"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:drawableTop="@drawable/bar_1"
+                android:text="收支汇总" />
+
+            <RadioButton
+                android:id="@+id/radio_button1"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/bar_2"
+                android:text="消费流水" />
+
+            <RadioButton
+                android:id="@+id/radio_button2"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/bar_3" 
+                android:text="收支分析"/>
+
+            <RadioButton
+                android:id="@+id/radio_button3"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/bar_4"
+                android:text="理财分析" />
+
+            <RadioButton
+                android:id="@+id/radio_button4"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/bar_5" 
+                android:text="设  置"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

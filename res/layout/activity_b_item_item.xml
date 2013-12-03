@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@color/app_bg_grey1"
+    android:layout_height="112dp" >
+
+    <TextView
+        android:id="@+id/b_item_item_name"
+        android:layout_marginTop="18dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/shoping"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/b_item_item_place"
+        android:layout_width="wrap_content"
+        android:layout_height="112dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_toRightOf="@+id/b_item_item_name"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/b_item_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:lines="2"
+            android:textColor="@color/app_grey2"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/b_item_item_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="￥50"
+                android:textColor="@color/cart_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="3dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/a_chart_title_bg" >
+
+                <ImageView
+                    android:id="@+id/bank_card_logo"
+                    android:layout_width="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="25dp"
+                    android:src="@drawable/boc" />
+
+                <TextView
+                    android:id="@+id/bank_card_bankname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/bank_card_logo"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="中国银行(4568)"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/app_grey2"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/b_item_item_divide_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:background="@color/app_grey3"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

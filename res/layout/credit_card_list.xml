@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bank_card_high"
+    android:orientation="horizontal" >
+
+    
+    <LinearLayout 
+        android:id="@+id/card_list_textlinear"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bank_card_high"
+        android:orientation="vertical"
+        >
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="信" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="用" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="卡" />
+    </LinearLayout>
+    
+    <HorizontalScrollView
+        android:layout_toRightOf="@id/card_list_textlinear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scrollbars="none"
+                android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+                <LinearLayout
+                    android:id="@+id/cardsLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <include layout="@layout/credit_card_item"
+                        android:layout_marginLeft="100dp"/>
+                    <include layout="@layout/credit_card_item"/>
+                    <include layout="@layout/credit_card_item"/>
+                </LinearLayout>
+  </HorizontalScrollView>
+
+</RelativeLayout>

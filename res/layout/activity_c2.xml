@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_grey1">
+
+    <include
+        android:id="@+id/c2_top"
+        layout="@layout/layout_comm_title_only" >
+    </include>
+
+    <LinearLayout
+        android:id="@+id/c2_above"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/c2_top"
+        android:background="@color/low_gray"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="7dp"
+                android:src="@drawable/date" />
+
+            <com.yeetou.xinyongkaguanjia.component.MySpinnerButton
+                android:id="@+id/c2_pick_date"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/abs__spinner_ab_holo_light"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/cart_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c2_pie_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@android:color/darker_gray" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/c2_pie_unclick" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:text="饼图"
+                android:textColor="@color/cart_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c2_bar_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/c2_bar_unclick" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:text="柱图"
+                android:textColor="@color/cart_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/c2_pie_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/c2_above" >
+
+        <RelativeLayout
+            android:id="@+id/c2_cart"
+            android:layout_width="fill_parent"
+            android:layout_height="320dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/c2_pie_layout_rela"
+            android:layout_width="fill_parent"
+            android:layout_height="320dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="支 出"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/c2_total_expend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="￥35790.00"
+                    android:textColor="@color/cart_gray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/c2_cart"
+            android:background="@drawable/text_area_bg" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:id="@+id/c2_pie_legend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/c2_above" >
+
+        <RelativeLayout
+            android:id="@+id/c2_bar_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/c2_bar_legend"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="98dp"
+        android:src="@color/app_grey2" />
+</RelativeLayout>

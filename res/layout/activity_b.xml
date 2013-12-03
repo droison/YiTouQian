@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BActivity" >
+
+    <include
+        android:id="@+id/b_top"
+        layout="@layout/layout_comm_title_only" >
+    </include>
+
+    <LinearLayout
+        android:id="@+id/b_spinner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/b_top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/category" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="分类："
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.yeetou.xinyongkaguanjia.component.MySpinnerButton
+                android:id="@+id/b_category"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/abs__spinner_ab_holo_light"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/cart_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="时间："
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.yeetou.xinyongkaguanjia.component.MySpinnerButton
+                android:id="@+id/b_thedate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/abs__spinner_ab_holo_light"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/cart_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ExpandableListView -->
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="93dp"
+        android:id="@+id/b_spinner_divider"
+        android:background="@color/cart_gray" />
+
+    <ExpandableListView
+        android:id="@+id/b_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/b_spinner_divider"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:childDivider="@color/cart_gray"
+        android:listSelector="#00000000" >
+    </ExpandableListView>
+
+</RelativeLayout>

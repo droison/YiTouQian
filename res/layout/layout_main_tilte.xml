@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_Card_Detail"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_bar_high"
+    android:background="@drawable/main_page_bg" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Card_Detail_Head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_high"
+        android:background="@drawable/title_bar_blue" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Ab_Left_Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/ab_item_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ab_left_indicator_dark"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="@dimen/main_title_margin"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@id/TextView_Ab_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text="@string/app_name"
+                android:textColor="#ffffff"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_Card_Detail_More"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ab_item_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/title_right1"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/update_2" />
+
+            <com.yeetou.xinyongkaguanjia.component.ASpinnerImageButton
+                android:id="@+id/title_right2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/main_title_margin"
+                android:background="@drawable/a_right_btn_bg" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

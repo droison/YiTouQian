@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@color/app_bg_grey1"
+    android:layout_height="100dp" >
+
+    <ImageView
+        android:id="@+id/card_info_debit_item_name"
+        android:layout_width="73.68dp"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:background="@drawable/debit_expend"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/card_info_debit_item_amount"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:textColor="@color/cart_green"
+        android:layout_centerVertical="true"
+        android:text="￥13456.00"
+        android:gravity="center"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/card_info_debit_item_amount"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/card_info_debit_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10月23日"
+            android:textColor="@color/cart_gray"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/card_info_debit_item_name_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="来自短信"
+            android:textColor="@color/cart_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

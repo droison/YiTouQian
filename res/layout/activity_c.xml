@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CActivity" >
+
+    <include
+        android:id="@+id/c_top"
+        layout="@layout/layout_comm_title_only" >
+    </include>
+
+    <LinearLayout
+        android:id="@+id/c_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="81dp"
+        android:layout_below="@id/c_top"
+        android:background="@color/low_gray2"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/c_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:text="平均每月支出："
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/c_expend_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/c_text1"
+                android:text="￥10000.00"
+                android:textColor="@color/cart_green"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/c_expend_text2"
+                android:text="打败了易投"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/c_expend_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/c_text2"
+                android:text="50%"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/c_text2"
+                android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:text="的客户"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:src="@color/app_grey3" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/c_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:text="平均每月收入："
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/c_income_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/c_text2"
+                android:text="￥10000.00"
+                android:textColor="@color/cart_red"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/c_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:text="的客户"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/c_income_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@id/c_text4"
+                android:text="50%"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@id/c_income_text2"
+                android:text="打败了易投"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:src="@color/app_grey2" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/c_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/c_linearlayout"
+        android:background="@color/app_bg_grey1"
+        android:childDivider="@color/cart_gray"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000" >
+    </ExpandableListView>
+
+</RelativeLayout>

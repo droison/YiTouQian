@@ -1,0 +1,288 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+
+    <include
+        android:id="@+id/a_top"
+        layout="@layout/layout_main_tilte" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/a_top"
+        android:paddingBottom="14dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/a_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/a_bg2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:paddingTop="99dp" >
+
+                <RelativeLayout
+                    android:id="@+id/a_zonglan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/a_zonglan_height"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/a_chart_title_bg" >
+
+                    <LinearLayout
+                        android:id="@+id/a_cart_l1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="34dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="本月支出:"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/a_expend"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left|center_vertical"
+                                android:text="￥10000.00"
+                                android:textColor="@color/cart_green" />
+
+                            <ImageView
+                                android:id="@+id/dynamic_item_image"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="45dip"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/a_main_bg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="1px"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="2dp"
+                                android:src="@color/cart_gray" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="本月收入:"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/a_income"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left|center_vertical"
+                                android:text="￥10000.00"
+                                android:textColor="@color/cart_red" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/a_cart_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@id/a_cart_l1"
+                        android:background="#fff" >
+
+                        <com.yeetou.xinyongkaguanjia.component.HorizontalListView
+                            android:id="@+id/a_cart"
+                            android:layout_width="fill_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginRight="19dp" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="120dp"
+                            android:background="@drawable/circle_list_divider" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/a_cart_demo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/chart_demo"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bank_card_high"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/a_chart_title_bg" >
+
+                    <LinearLayout
+                        android:id="@+id/card_list_textlinear1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/bank_card_high"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="信"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="用"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="卡"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="3dp"
+                        android:layout_toRightOf="@id/card_list_textlinear1"
+                        android:background="@color/cart_gray" />
+
+                    <HorizontalScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/card_list_textlinear1"
+                        android:scrollbars="none" >
+
+                        <com.yeetou.xinyongkaguanjia.component.ListLinearLayout
+                            android:id="@+id/cardsLinearLayout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+                    </HorizontalScrollView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bank_card_high"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/a_chart_title_bg"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/card_list_textlinear2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/bank_card_high"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="储"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="蓄"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="卡"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="3dp"
+                        android:layout_toRightOf="@id/card_list_textlinear2"
+                        android:background="@color/cart_gray" />
+
+                    <HorizontalScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/card_list_textlinear2"
+                        android:scrollbars="none" >
+
+                        <com.yeetou.xinyongkaguanjia.component.ListLinearLayout
+                            android:id="@+id/cardsLinearLayout2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal" />
+                    </HorizontalScrollView>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

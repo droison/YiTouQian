@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">易投信用卡管家</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">易投信用卡管家</string>
+    <string name="login_guanli">一账户管理个人所有收支  \n ---钱花哪里笔笔都知道</string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="title_activity_a">AActivity</string>
+    <string name="title_activity_b">BActivity</string>
+    <string name="title_activity_c">CActivity</string>
+    <string name="title_activity_d">DActivity</string>
+    <string name="title_activity_e">EActivity</string>
+    <string name="main_tab_a">收支汇总</string>
+    <string name="main_tab_b">消费流水</string>
+    <string name="main_tab_c">收支分析</string>
+    <string name="main_tab_d">理财分析</string>
+    <string name="main_tab_e">设置</string>
+    <string name="title_activity_c2">C2Activity</string>
+    <string name="title_activity_c3">C3Activity</string>
+    <string name="title_activity_e1">E1Activity</string>
+    <string name="title_activity_e2">E2Activity</string>
+    <string name="title_activity_e3">E3Activity</string>
+    <string name="title_activity_e4">E4Activity</string>
+    <string name="title_activity_e5">E5Activity</string>
+    <string name="title_activity_e6">E6Activity</string>
+    <string name="title_activity_e1_passwd">E1PasswdActivity</string>
+    <string name="e4_share_content">这是易投的网站www.yeetou.com,欢迎加入</string>
+    <string name="title_activity_e2_email">E2EmailActivity</string>
+    <string name="title_activity_bemial_add">BEmialAddActivity</string>
+    <string name="title_activity_change_card">ChangeCardActivity</string>
+    <string name="login_skip_text"><u>跳过信用卡></u></string>
+    <string name="login_email_pwd_error"><u>重新输入账号</u></string>
+    <string name="min_amount_title">ChangeCardActivity</string>
+    <string name="buy_amount_title">ChangeCardActivity</string>
+    <string name="default_amount_value">ChangeCardActivity</string>
+    <string name="buy_amount_unit">ChangeCardActivity</string>
+    <string name="all_profit_title">ChangeCardActivity</string>
+    <string name="profit_unit">ChangeCardActivity</string>
+    <string name="profit_left">ChangeCardActivity</string>
+    <string name="profit_top">ChangeCardActivity</string>
+    <string name="profit_bottom">ChangeCardActivity</string>
+    <string name="default_min_amount">ChangeCardActivity</string>
+    <string name="default_time_value">ChangeCardActivity</string>
+    <string name="financial_time_title">ChangeCardActivity</string>
+    <string name="default_sell_state">ChangeCardActivity</string>
+    <string name="default_profit_type">ChangeCardActivity</string>
+    <string name="default_profit">ChangeCardActivity</string>
+    <string name="profit_pre_year_title">ChangeCardActivity</string>
+    <string name="offline_text1">网络不给力呀</string>
+    <string name="offline_text2">请检查网络连接</string>
+
+</resources>

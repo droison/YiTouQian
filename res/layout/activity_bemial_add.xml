@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="添加新邮箱"
+            android:textColor="@color/cart_blue"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="5dp"
+            android:background="@color/cart_blue" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="邮箱账号"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#ddd" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="邮箱密码"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:password="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="15dp"
+                android:textSize="15dp"
+                 >
+            </EditText>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#ddd" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="5dp"
+            android:background="#ddd" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/passwd_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btn_cancel"
+                android:padding="15dp"
+                android:text="取消" />
+
+            <ImageView
+                android:layout_width="2px"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:background="#ddd" />
+
+            <Button
+                android:id="@+id/passwd_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btn_summit"
+                android:padding="15dp"
+                android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

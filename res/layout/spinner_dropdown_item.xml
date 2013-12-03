@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:background="@android:drawable/list_selector_background"  
+    android:orientation="vertical" >  
+      
+    <TextView android:id="@+id/spinner_dropdown_item_textview"   
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:gravity="left|bottom"  
+        android:paddingTop="11dip"  
+        android:paddingBottom="11dip"  
+        android:paddingLeft="5dip"  
+        />  
+</LinearLayout> 

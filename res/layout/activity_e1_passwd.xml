@@ -1,0 +1,225 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".E1PasswdActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="密码设置"
+                android:textColor="@color/cart_blue"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/e1_tishi"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="bottom"
+                android:text="默认密码:13811007486"
+                android:layout_marginRight="5dp"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="5dp"
+            android:background="@color/cart_blue" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="原密码"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/e1_passwd" >
+
+                <EditText
+                    android:id="@+id/passwd_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:password="true"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" 
+                    android:paddingLeft="5dp">
+                </EditText>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2px"
+                    android:background="#ddd" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#ddd" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="新密码"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/e1_passwd" >
+
+                <EditText
+                    android:id="@+id/passwd_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:password="true"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" 
+                    android:paddingLeft="5dp">
+                </EditText>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2px"
+                    android:background="#ddd" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#ddd" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="确认密码"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/e1_passwd" >
+
+                <EditText
+                    android:id="@+id/passwd_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:password="true"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:paddingLeft="5dp" >
+                </EditText>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2px"
+                    android:background="#ddd" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="5dp"
+            android:background="#ddd" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/passwd_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btn_cancel"
+                android:padding="15dp"
+                android:text="取消" />
+
+            <ImageView
+                android:layout_width="2px"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:background="#ddd" />
+
+            <Button
+                android:id="@+id/passwd_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:onClick="btn_summit"
+                android:padding="15dp"
+                android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

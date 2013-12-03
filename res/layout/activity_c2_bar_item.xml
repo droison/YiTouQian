@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:paddingRight="25dp"
+        android:paddingTop="13dp"
+        android:background="@color/app_bg_grey1"
+        android:paddingBottom="13dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/c2_bar_color"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:src="@drawable/shoping" />
+
+            <TextView
+                android:id="@+id/c2_bar_item_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="购物"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:src="@color/app_grey2"
+             />
+
+        <LinearLayout
+            android:id="@+id/c2_bar_color_l_layout"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_height="54dp"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@color/app_blue"
+                android:id="@+id/c2_color_l"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="sadsasda"
+                android:id="@+id/c2_money"
+                android:textColor="@color/app_grey1"
+                android:textSize="17sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:src="@color/app_grey2"
+            android:id="@+id/c2_bar_item_divide"
+             />
+
+</LinearLayout>

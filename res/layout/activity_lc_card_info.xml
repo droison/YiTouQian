@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_comm_title_only" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/lc_card_info_title"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="9dp"
+            android:text="招财银行招财进宝"
+            android:textColor="@color/app_grey1"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:src="@color/app_grey2" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="82dp"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="58"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="预期收益"
+                    android:textColor="@color/app_grey1"
+                    android:layout_marginLeft="9dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/lc_card_info_title_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="9dp"
+                    android:text="5.6%"
+                    android:textColor="@color/cart_orange"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@color/app_grey3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="65"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="投资期限："
+                        android:textColor="@color/app_grey1"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lc_card_info_title_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_horizontal"
+                        android:text="18天"
+                        android:textColor="@color/app_grey2"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="bottom|center_vertical"
+                        android:text="起购金额："
+                        android:textColor="@color/app_grey1"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/lc_card_info_title_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:gravity="bottom|center_vertical"
+                        android:text="5万"
+                        android:textColor="@color/app_blue"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@color/app_grey3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="47"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/lc_card_info_title_text4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="投资期限"
+                    android:textColor="@color/app_grey1"
+                    android:maxLines="3"
+                    android:textSize="14sp" />
+<!-- 
+                <TextView
+                    android:id="@+id/lc_card_info_title_text5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="投资期限:11"
+                    android:textColor="@color/app_grey1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/lc_card_info_title_text6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left|bottom"
+                    android:text="投资期限:333"
+                    android:textColor="@color/app_grey1"
+                    android:textSize="12sp" /> -->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/card_info_tab_bg"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/card_info_choose_history"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/card_info_text1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="专家解读"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/card_info_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/app_blue" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_info_curr"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/card_info_text2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:lines="1"
+                android:text="收益计算"
+                android:textColor="@color/app_grey2"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/card_info_curr_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/app_blue"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_info_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/card_info_text3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="银行电话"
+                android:textColor="@color/app_grey2"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/card_info_phone_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/app_blue"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_info_map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/card_info_text4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="银行网点"
+                android:textColor="@color/app_grey2"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/card_info_map_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/app_blue"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_blue" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_bg_grey2" >
+
+        <RelativeLayout
+            android:id="@+id/lc_linearLayout_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="230dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/lc_total_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="该产品强烈推荐购买"
+                    android:textColor="@color/cart_orange"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/cart_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/lc_1_img"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ok_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="收益方面:"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/lc_1_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:maxLines="2"
+                        android:text="该产品飒飒东风卡洛斯开房间啊；老师讲法看了；世界发达；了开始放假；啊手机发；老师讲法看了；激发了手机费；列举法；sjf"
+                        android:textColor="@color/app_grey1"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/lc_2_img"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ok_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="风险方面:"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/lc_2_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:maxLines="2"
+                        android:text="该产品飒飒东风卡洛斯开房间啊；老师讲法看了；世界发达；了开始放假；啊手机发；老师讲法看了；激发了手机费；列举法；sjf"
+                        android:textColor="@color/app_grey1"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/lc_3_img"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ok_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="产品期限方面:"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/lc_3_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:maxLines="2"
+                        android:text="该产品飒飒东风卡洛斯开房间啊；老师讲法看了；世界发达；了开始放假；啊手机发；老师讲法看了；激发了手机费；列举法；sjf"
+                        android:textColor="@color/app_grey1"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/lc_4_img"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ok_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="购买起点方面:"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/lc_4_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:maxLines="2"
+                        android:text="该产品飒飒东风卡洛斯开房间啊；老师讲法看了；世界发达；了开始放假；啊手机发；老师讲法看了；激发了手机费；列举法；sjf"
+                        android:textColor="@color/app_grey1"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="更多专家建议，请登录易投网页查看\n记住我们的网站：www.yeetou.com"
+                android:textColor="@color/app_grey1"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lc_relativeLayout_2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="20dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请输入购买金额"
+                        android:textColor="@color/app_grey1"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/cart_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/lc_input"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="2"
+                            android:background="@color/app_bg_grey1"
+                            android:gravity="right|bottom"
+                            android:hint="请输入金额"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:gravity="left|bottom"
+                            android:text="万元"
+                            android:textColor="@color/app_grey2"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/cart_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="20dp" >
+
+                    <TextView
+                        android:id="@+id/lc_text_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+  
+                        android:textColor="@color/app_grey1"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/cart_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/lc_output"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:background="@color/app_bg_grey1"
+                            android:gravity="right|bottom"
+                            android:text="￥0"
+                            android:textColor="@color/cart_orange"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3"
+                            android:gravity="left|bottom"
+                            android:paddingLeft="5dp"
+                            android:text="元"
+                            android:textColor="@color/app_grey2"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="更多专家建议，请登录易投网页查看\n记住我们的网站：www.yeetou.com"
+                android:textColor="@color/app_grey1"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/lc_scroll_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_bg_grey2"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/lc_linearLayout_bank_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/lc_linearLayout_4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.baidu.mapapi.MapView
+                android:id="@+id/lc_map_View"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

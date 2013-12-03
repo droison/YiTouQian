@@ -1,0 +1,516 @@
+<com.yeetou.xinyongkaguanjia.component.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/keyboardLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/loginCart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:src="@drawable/login_main_bg" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/login_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/loadingpage_05" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/login_linearlayout_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/login_progress"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="@dimen/login_progress"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/login_progressbar1"
+                        android:layout_width="@dimen/login_progress"
+                        android:layout_height="@dimen/login_progress"
+                        android:src="@drawable/progressbar1" />
+
+                    <ImageView
+                        android:id="@+id/login_finish1"
+                        android:layout_width="@dimen/login_progress"
+                        android:layout_height="@dimen/login_progress"
+                        android:background="@drawable/ok_icon"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/login_progress"
+                        android:gravity="center_vertical"
+                        android:text=" 读取您的短信账单"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/login_linearlayout_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_linearlayout_1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2.5dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="已读取"
+                        android:textColor="@color/cart_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/duanxin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/cart_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="条短信账单,"
+                        android:textColor="@color/cart_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/login_yinhang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/cart_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个银行卡"
+                        android:textColor="@color/cart_gray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/login_linearlayout_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_linearlayout_2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/login_progressbar2"
+                            android:layout_width="@dimen/login_progress"
+                            android:layout_height="@dimen/login_progress"
+                            android:src="@drawable/progressbar1" />
+
+                        <ImageView
+                            android:id="@+id/login_finish2"
+                            android:layout_width="@dimen/login_progress"
+                            android:layout_height="@dimen/login_progress"
+                            android:background="@drawable/ok_icon"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 读取您的信用卡账单"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <!-- 输入邮箱布局 -->
+
+                    <LinearLayout
+                        android:id="@+id/login_linearlayout_insert"
+                        android:layout_width="fill_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/text_area_bg"
+                        android:orientation="vertical"
+                        android:paddingLeft="21dp"
+                        android:paddingRight="21dp" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentLeft="true"
+                                android:gravity="center_vertical"
+                                android:text="轻松导入一点管理"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/login_skip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center_vertical"
+                                android:text="@string/login_skip_text"
+                                android:textColor="@color/app_blue"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:src="@color/cart_gray" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="bottom"
+                            android:orientation="horizontal"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="5dp" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="76dp"
+                                android:layout_weight="20"
+                                android:orientation="vertical" >
+
+                                <EditText
+                                    android:id="@+id/login_email_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="38dp"
+                                    android:ems="20"
+                                    android:inputType="textEmailAddress"
+                                    android:textSize="15sp" >
+                                </EditText>
+
+                                <EditText
+                                    android:id="@+id/login_email_passwd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="38dp"
+                                    android:ems="20"
+                                    android:inputType="textPassword"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="76dp"
+                                android:layout_weight="33" >
+
+                                <Button
+                                    android:id="@+id/login_submit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="7dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:background="@drawable/blue_btn_bg"
+                                    android:gravity="center"
+                                    android:text="确定"
+                                    android:textColor="@color/white" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 验证邮箱布局 -->
+
+                    <LinearLayout
+                        android:id="@+id/login_linearlayout_check"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/text_area_bg"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/login_email_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="21dp"
+                            android:text="sjdfslj@gmail.com"
+                            android:textColor="@color/app_grey2"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@color/cart_gray" />
+
+                        <!-- 验证过程 -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp" >
+
+                                <ImageView
+                                    android:id="@+id/login_check_finish1"
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/login_dian_next" />
+
+                                <TextView
+                                    android:id="@+id/login_check_text1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@+id/login_check_finish1"
+                                    android:text="正在验证登录信息"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp" />
+
+                                <ImageView
+                                    android:id="@+id/login_check_warning"
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@+id/login_check_text1"
+                                    android:src="@drawable/login_email_error"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/login_reinsert"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:text="@string/login_email_pwd_error"
+                                    android:textColor="@color/app_blue"
+                                    android:textSize="13sp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp" >
+
+                                <ImageView
+                                    android:id="@+id/login_check_finish2"
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/login_dian_next" />
+
+                                <TextView
+                                    android:id="@+id/login_check_text2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/login_check_finish2"
+                                    android:text="正在读取邮件账单"
+                                    android:textColor="@color/gray"
+                                    android:textSize="13sp" />
+
+                                <ImageView
+                                    android:id="@+id/login_check_warning2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/login_check_text2" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp" >
+
+                                <ImageView
+                                    android:id="@+id/login_check_finish3"
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/login_dian_next" />
+
+                                <TextView
+                                    android:id="@+id/login_check_text3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/login_check_finish3"
+                                    android:text="正在分析账单信息"
+                                    android:textColor="@color/gray"
+                                    android:textSize="13sp" />
+
+                                <ImageView
+                                    android:id="@+id/login_check_warning3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/login_check_text3" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- 继续添加邮箱布局 -->
+
+                    <LinearLayout
+                        android:id="@+id/login_linearlayout_add"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:id="@+id/login_linearlayout_4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="已读取"
+                                android:textColor="@color/cart_gray"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/login_youjian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/cart_gray"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="条邮件账单,"
+                                android:textColor="@color/cart_gray"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/login_xinyongka"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/cart_gray"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="个信用卡"
+                                android:textColor="@color/cart_gray"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp" >
+
+                            <LinearLayout
+                                android:id="@+id/login_add_email"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:orientation="vertical" >
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/login_re_add"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@id/login_add_email"
+                                android:layout_marginTop="7dp"
+                                android:background="@drawable/email"
+                                android:gravity="center_vertical" >
+
+                                <TextView
+                                    android:id="@+id/add_new"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center_vertical"
+                                    android:text="继续添加"
+                                    android:textColor="@color/app_grey1" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_toLeftOf="@id/add_new"
+                                    android:background="@drawable/add_new" />
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/login_tomain"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/login_re_add"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="7dp"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/login_tomain" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/login_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="4dp"
+            android:max="100"
+            android:progressDrawable="@drawable/my_progressbar" />
+    </RelativeLayout>
+
+</com.yeetou.xinyongkaguanjia.component.ResizeLayout>

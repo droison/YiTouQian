@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_Ab_Title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:padding="15dp" >
+
+    <ImageView
+        android:id="@+id/card_info_bank_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/boc" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Ab_Left_Indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/card_info_bank_logo"
+        android:orientation="vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="5.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView_Ab_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="招商银行信用卡"
+                android:textColor="#000000"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Ab_bank_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(9890)"
+                android:textColor="#bbbbbb"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView_Ab_Title2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="美瑞账单日"
+                android:textColor="@color/app_grey2"
+                android:textSize="13.0sp"
+                android:maxLines="1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView_Ab_Title3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1"
+                android:text="每月还款日"
+                android:maxLines="1"
+               	android:textColor="@color/app_grey2"
+                android:textSize="13.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
